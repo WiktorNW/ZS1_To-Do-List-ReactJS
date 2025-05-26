@@ -27,12 +27,11 @@ function App() {
                   {tasks.map((task) => (
                       <li key={task.id} className='list-group-item d-flex justify-content-between align-items-center text-capitalize'>
                           <div>
-                              <input type='checkbox' className='m-2' /* Temporary solution */ ></input>
+                              <input type='checkbox' className='m-2'></input>
                               {task.text}
                           </div>
                           <div>
                               { /* To Do */ }
-                              {/*<button className='btn btn-warning m-1 btn-sm' onClick={() => editTask(task.id)}><i class="bi bi-pencil"></i></button>*/}
                               <button className='btn btn-danger btn-sm' onClick={() => removeTask(task.id)}><i class="bi bi-trash"></i></button>
                           </div>
                       </li>
